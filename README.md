@@ -42,8 +42,6 @@ Rules are defined using MongoDB syntax.
 }
 ```
 
-Validation is fast and performance. It relies on comparing each option rule with current selection object.
-
 #### Sample selection object
 
 ```javascript
@@ -58,5 +56,5 @@ Validation is fast and performance. It relies on comparing each option rule with
  }
 ```
 
-Copyright © Klaudiusz Marszałek
-License: MITNFA
+Validation is fast and performance. It relies on comparing rules defined on every option with current selection object.
+To comparing this stuff I've been used [great library](https://github.com/protobi/query) written by Pieter Sheth-Voss
