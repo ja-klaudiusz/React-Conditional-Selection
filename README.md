@@ -1,20 +1,17 @@
 # React Conditional Selection
 
-===================
-
 React Conditional Selection - useful way to build cascading selection with large amount of options and business rules.
 
 # How it works
 
-===================
-
 Business rules are defined on almost every row of data and each time when selection object will change there is starting validation process.
 Rules are defined using MongoDB syntax.
 
-####Sample data object
+#### Sample data object
 
 ```javascript
-FUELTYPE: {
+{
+ FUELTYPE: {
     code: 'FUELTYPE',
     name: 'Fuel type',
     options: [
@@ -42,11 +39,12 @@ FUELTYPE: {
     isRequired: true,
     rules: null,
   }
+}
 ```
 
 Validation is fast and performance. It relies on comparing each option rule with current selection object.
 
-####Sample selection object
+#### Sample selection object
 
 ```javascript
  "selection": {
@@ -60,6 +58,5 @@ Validation is fast and performance. It relies on comparing each option rule with
  }
 ```
 
-===================
 Copyright © Klaudiusz Marszałek
 License: MITNFA
