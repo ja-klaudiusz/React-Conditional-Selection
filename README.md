@@ -67,7 +67,7 @@ npm install
 npm run start
 ```
 
-Or try it on CodesandBox [React Conditional Selection](https://codesandbox.io/s/react-conditional-selection-75e7s?file=/src/App.js)
+Or try it on CodeSandbox [React Conditional Selection](https://codesandbox.io/s/react-conditional-selection-75e7s?file=/src/App.js)
 
 ## Thanks to
 
