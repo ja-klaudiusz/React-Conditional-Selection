@@ -71,5 +71,8 @@ Or try it on CodeSandbox [React Conditional Selection](https://codesandbox.io/s/
 
 ## Thanks to
 
-To comparing this stuff I've been used [great library](https://github.com/protobi/query) written by Pieter Sheth-Voss
-Also thanks to Jad Watson for great [React Select](https://github.com/jedwatson/react-select) and of course [React Team](https://reactjs.org/community/team.html) for React
+To comparing this stuff I've been used [great library](https://github.com/protobi/query) written by Pieter Sheth-Voss.
+
+Also thanks to Jad Watson for great [React Select](https://github.com/jedwatson/react-select).
+
+And of course thaks to [React Team](https://reactjs.org/community/team.html) for React.
