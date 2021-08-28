@@ -57,4 +57,19 @@ Rules are defined using MongoDB syntax.
 ```
 
 Validation is fast and performance. It relies on comparing rules defined on every option with current selection object.
+
+## How to use
+
+Clone this repository then execute
+
+```bash
+npm install
+npm run start
+```
+
+Or try it on CodesandBox [React Conditional Selection](https://codesandbox.io/s/react-conditional-selection-75e7s?file=/src/App.js)
+
+## Thanks to
+
 To comparing this stuff I've been used [great library](https://github.com/protobi/query) written by Pieter Sheth-Voss
+Also thanks to Jad Watson for great [React Select](https://github.com/jedwatson/react-select) and of course [React Team](https://reactjs.org/community/team.html) for React
