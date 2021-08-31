@@ -4,7 +4,7 @@ import { checkStats, validateRule } from './index';
 // ----------------------------------------------------------------------
 // React Conditional Selection validation
 // Copyright © Klaudiusz Marszałek
-// License: MITNFA
+// License: MIT
 // ----------------------------------------------------------------------
 
 export const validate = (data, selection) => {

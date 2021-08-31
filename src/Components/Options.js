@@ -18,7 +18,9 @@ const singleValue = ({ children, ...props }) => {
             color: '#7bc32c',
           }}></span>
         <div className="flex flex-col justify-center pl-2">
-          <strong>{props.selectProps.placeholder}</strong>
+          <strong>
+            <small>{props.selectProps.placeholder}</small>
+          </strong>
           {children}
         </div>
       </div>

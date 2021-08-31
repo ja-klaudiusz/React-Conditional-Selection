@@ -1,11 +1,10 @@
-# React Conditional Selection
+# [React Conditional Selection](https://react-conditional-select.vercel.app)
 
-React Conditional Selection - useful way to build cascading selection with large amount of options and business rules.
+React Conditional Selection is a useful way to build cascading select with large amount of options, categories and business rules aimed at controlling the dependencies between them.
 
 # How it works
 
-Business rules are defined on almost every row of data and each time when selection object will change there is starting validation process.
-Rules are defined using MongoDB syntax.
+Business rules are defined on almost every row of data. Each time when object of selection changes, there is starting validation process. Rule decide about when option or select should render. Validation relies on comparing rules with selection object. Categories, selects or options are rendered only when its rules are matching to current object of selection.
 
 #### Sample data object
 
@@ -68,6 +67,14 @@ npm run start
 ```
 
 Or try it on CodeSandbox [React Conditional Selection](https://codesandbox.io/s/react-conditional-selection-75e7s?file=/src/App.js)
+
+## Demo
+
+[React Conditional Selection](https://react-conditional-select.vercel.app/)
+
+## License
+
+MIT
 
 ## Thanks to
 
