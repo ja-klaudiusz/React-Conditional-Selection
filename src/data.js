@@ -223,7 +223,7 @@ const data = {
         rules: { EQUIPMENTPACKAGE: '5' },
       },
       {
-        code: 'NAPPA',
+        code: 'CUMA',
         name: 'Comade Uma',
         default: null,
         rules: { EQUIPMENTPACKAGE: '6' },
@@ -687,27 +687,27 @@ const data = {
         },
       },
       {
-        code: 'NAP49261',
-        name: 'NAP 49261',
+        code: 'CUMA49261',
+        name: 'CUMA 49261',
         default: null,
         rules: {
-          $and: [{ UPHLOSTERYGROUP: 'NAPPA' }, { EQUIPMENTPACKAGE: '6' }],
+          $and: [{ UPHLOSTERYGROUP: 'CUMA' }, { EQUIPMENTPACKAGE: '6' }],
         },
       },
       {
-        code: 'NAP76061',
-        name: 'NAP 76061',
+        code: 'CUMA76061',
+        name: 'CUMA 76061',
         default: null,
         rules: {
-          $and: [{ UPHLOSTERYGROUP: 'NAPPA' }, { EQUIPMENTPACKAGE: '6' }],
+          $and: [{ UPHLOSTERYGROUP: 'CUMA' }, { EQUIPMENTPACKAGE: '6' }],
         },
       },
       {
-        code: 'NAP77338',
-        name: 'NAP 77338',
+        code: 'CUMA77338',
+        name: 'CUMA 77338',
         default: null,
         rules: {
-          $and: [{ UPHLOSTERYGROUP: 'NAPPA' }, { EQUIPMENTPACKAGE: '6' }],
+          $and: [{ UPHLOSTERYGROUP: 'CUMA' }, { EQUIPMENTPACKAGE: '6' }],
         },
       },
       {
@@ -963,27 +963,27 @@ const data = {
         },
       },
       {
-        code: 'NAP49261',
-        name: 'NAP 49261',
+        code: 'CUMA49261',
+        name: 'CUMA 49261',
         default: null,
         rules: {
-          $and: [{ UPHLOSTERYGROUP: 'NAPPA' }, { EQUIPMENTPACKAGE: '6' }],
+          $and: [{ UPHLOSTERYGROUP: 'CUMA' }, { EQUIPMENTPACKAGE: '6' }],
         },
       },
       {
-        code: 'NAP76061',
-        name: 'NAP 76061',
+        code: 'CUMA76061',
+        name: 'CUMA 76061',
         default: null,
         rules: {
-          $and: [{ UPHLOSTERYGROUP: 'NAPPA' }, { EQUIPMENTPACKAGE: '6' }],
+          $and: [{ UPHLOSTERYGROUP: 'CUMA' }, { EQUIPMENTPACKAGE: '6' }],
         },
       },
       {
-        code: 'NAP77338',
-        name: 'NAP 77338',
+        code: 'CUMA77338',
+        name: 'CUMA 77338',
         default: null,
         rules: {
-          $and: [{ UPHLOSTERYGROUP: 'NAPPA' }, { EQUIPMENTPACKAGE: '6' }],
+          $and: [{ UPHLOSTERYGROUP: 'CUMA' }, { EQUIPMENTPACKAGE: '6' }],
         },
       },
       {
