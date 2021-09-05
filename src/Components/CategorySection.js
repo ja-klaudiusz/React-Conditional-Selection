@@ -1,5 +1,6 @@
 import React from 'react';
 import Dropdown from './Dropdown';
+
 const CategorySection = ({
   categoryName,
   children,
@@ -17,6 +18,7 @@ const CategorySection = ({
     }
     return show;
   };
+
   return (
     <>
       {showCategoryName() && (

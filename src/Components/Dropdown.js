@@ -15,6 +15,14 @@ const Dropdown = ({
   const childrenNotExist = children.length === 0;
   const disabled = !isValid || childrenNotExist;
 
+  const handleOnChange = (option) => {
+    const newSelection = {
+      ...selection,
+      [code]: option.code,
+    };
+    updateSelection(newSelection);
+  };
+
   useEffect(() => {
     disabled && setValue(null);
   }, [disabled]);
@@ -30,13 +38,7 @@ const Dropdown = ({
       placeholder={name}
       isDisabled={children.length === 1 || disabled}
       isRequired={isRequired}
-      onChange={(option) => {
-        const newSelection = {
-          ...selection,
-          [code]: option.code,
-        };
-        updateSelection(newSelection);
-      }}
+      onChange={handleOnChange}
       name={code}
       options={children}
       showRequired={showRequired}
