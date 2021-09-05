@@ -1,6 +1,6 @@
 import React from 'react';
 import Dropdown from './Dropdown';
-const CategoryItem = ({
+const CategorySection = ({
   categoryName,
   children,
   updateSelection,
@@ -45,4 +45,4 @@ const CategoryItem = ({
   );
 };
 
-export default CategoryItem;
+export default CategorySection;
