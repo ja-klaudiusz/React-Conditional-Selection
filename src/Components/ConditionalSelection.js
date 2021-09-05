@@ -1,35 +1,19 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import CategoryItem from './CategoryItem';
 import { formCallback } from '../utils';
-import { validate } from '../utils/validation';
+import { useValidate } from '../utils/validation';
 import Loading from './Loading';
 const Configurator = ({ data, showRequired, defaultValues = {} }) => {
-  const [stats, setStats] = useState({ isReady: false });
-  const [selection, setSelection] = useState({});
-  const [validData, setValidData] = useState(null);
-
-  const handleValidate = async ({ data, selection }) => {
-    const { newSelection, validData, stats } = await validate(data, selection);
-
-    setSelection(newSelection);
-    setValidData(validData);
-    setStats(stats);
-  };
+  const { selection, validData, stats, validate } = useValidate();
 
   const handleUpdateSelection = (newSelection) => {
-    handleValidate({
-      data,
-      selection: newSelection,
-    });
+    validate(data, newSelection);
   };
 
   useEffect(() => {
     if (data) {
-      handleValidate({
-        data,
-        selection: defaultValues,
-      });
+      validate(data, defaultValues);
     }
   }, [data]);
 

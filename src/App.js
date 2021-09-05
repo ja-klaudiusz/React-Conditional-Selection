@@ -23,9 +23,9 @@ function App() {
                   AIRBAGS: 'MORE',
                   ENGINEVERSIONS: 'GASOLINE',
                   FUELTYPE: 'PETROL',
-                  UPHLOSTERYGROUP: 'NAPPA',
-                  UPHLOSTERYINTERIOR: 'NAP49261',
-                  UPHLOSTERYSEAT: 'NAP49261',
+                  UPHLOSTERYGROUP: 'CUMA',
+                  UPHLOSTERYINTERIOR: 'CUMA49261',
+                  UPHLOSTERYSEAT: 'CUMA76061',
                 }}
               />
             </div>
