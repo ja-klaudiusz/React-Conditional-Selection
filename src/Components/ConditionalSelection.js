@@ -4,7 +4,8 @@ import CategorySection from './CategorySection';
 import { formCallback } from '../utils';
 import { useValidate } from '../utils/validation';
 import Loading from './Loading';
-const Configurator = ({ data, showRequired, defaultValues = {} }) => {
+
+const ConditionalSelection = ({ data, showRequired, defaultValues = {} }) => {
   const { selection, validData, stats, validate } = useValidate();
 
   const handleUpdateSelection = (newSelection) => {
@@ -19,11 +20,6 @@ const Configurator = ({ data, showRequired, defaultValues = {} }) => {
 
   return validData ? (
     <div className="w-full flex flex-row items-center justify-center space-y-6">
-      <div className="w-1/2 md:w-3/5 text-sm text-left">
-        <pre>
-          <code>{JSON.stringify({ selection, stats }, null, 4)}</code>
-        </pre>
-      </div>
       <div className="w-1/2 md:w-3/5 text-md text-left">
         <form
           onKeyUp={formCallback}
@@ -49,4 +45,4 @@ const Configurator = ({ data, showRequired, defaultValues = {} }) => {
   );
 };
 
-export default Configurator;
+export default ConditionalSelection;
