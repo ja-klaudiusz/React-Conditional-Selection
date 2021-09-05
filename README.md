@@ -88,6 +88,33 @@ Business rules are defined on almost every row of data. Each time when object of
 
 Full example [data.js](https://github.com/ja-klaudiusz/React-Conditional-Selection/blob/main/src/data.js)
 
+#### Sample data rule object
+
+```javascript
+"rule": {
+    "$or": [
+        {
+            "$and": [
+                {
+                    "FUELTYPE": {
+                        "$in": [
+                            "PETROL",
+                            "DIESEL"
+                        ]
+                    }
+                },
+                {
+                    "EQUIPMENTLINE": "AMG"
+                }
+            ]
+        },
+        {
+            "EQUIPMENTLINE": "AMGPLUS"
+        }
+    ]
+}
+```
+
 #### Sample selection object
 
 ```javascript
@@ -162,7 +189,7 @@ function App() {
 export default App;
 ```
 
-Or try it on CodeSandbox [React Conditional Selection](https://codesandbox.io/s/react-conditional-selection-75e7s?file=/src/App.js)
+Try it on CodeSandbox [React Conditional Selection](https://codesandbox.io/s/react-conditional-selection-75e7s?file=/src/App.js)
 
 ## Demo
 
