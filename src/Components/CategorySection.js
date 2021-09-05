@@ -1,5 +1,5 @@
 import React from 'react';
-import Options from './Options';
+import Dropdown from './Dropdown';
 const CategoryItem = ({
   categoryName,
   children,
@@ -27,7 +27,7 @@ const CategoryItem = ({
         return (
           option.isVisible &&
           option.isValid && (
-            <Options
+            <Dropdown
               key={option.code}
               selection={selection}
               showRequired={showRequired}

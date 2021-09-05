@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react';
-import CategoryItem from './CategoryItem';
+import CategorySection from './CategorySection';
 import { formCallback } from '../utils';
 import { useValidate } from '../utils/validation';
 import Loading from './Loading';
@@ -31,7 +31,7 @@ const Configurator = ({ data, showRequired, defaultValues = {} }) => {
           {Object.keys(validData).map((key) => {
             const category = validData[key];
             return (
-              <CategoryItem
+              <CategorySection
                 key={key}
                 selection={selection}
                 showRequired={showRequired}
