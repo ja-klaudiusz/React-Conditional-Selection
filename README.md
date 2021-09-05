@@ -59,12 +59,57 @@ Validation is fast and performance. It relies on comparing rules defined on ever
 
 ## How to use
 
-Clone this repository then execute
+Install package and apply code like this
 
-```bash
-npm install
-npm run start
+```javascript
+import ConditionalSelection from 'react-conditional-selection';
+
+function App() {
+  const data = {
+    FUELTYPE: {
+      code: 'FUELTYPE',
+      name: 'Fuel type',
+      options: [
+        {
+          code: 'NONE',
+          name: 'none',
+          default: null,
+          rules: { ENGINEVERSIONS: { $in: ['ELECTRIC', 'HYDROGEN'] } },
+        },
+        {
+          code: 'PETROL',
+          name: 'Petrol',
+          default: null,
+          rules: { ENGINEVERSIONS: 'GASOLINE' },
+        },
+        {
+          code: 'DIESEL',
+          name: 'Diesel',
+          default: null,
+          rules: { ENGINEVERSIONS: 'GASOLINE' },
+        },
+      ],
+      category: { name: 'Technical Data', code: 'TECHNICAL' },
+      isVisible: true,
+      isRequired: true,
+      rules: null,
+    },
+  };
+  return (
+    <ConditionalSelection
+      data={data}
+      showRequired={true}
+      callback={(data) => {
+        console.log(data);
+      }}
+    />
+  );
+}
+
+export default App;
 ```
+
+## [Sample data](https://github.com/ja-klaudiusz/React-Conditional-Selection/blob/main/src/data.js)
 
 Or try it on CodeSandbox [React Conditional Selection](https://codesandbox.io/s/react-conditional-selection-75e7s?file=/src/App.js)
 
