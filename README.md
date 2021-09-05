@@ -10,36 +10,83 @@ Business rules are defined on almost every row of data. Each time when object of
 
 ```javascript
 {
- FUELTYPE: {
-    code: 'FUELTYPE',
-    name: 'Fuel type',
-    options: [
-      {
-        code: 'NONE',
-        name: 'none',
-        default: null,
-        rules: { ENGINEVERSIONS: { $in: ['ELECTRIC', 'HYDROGEN'] } },
-      },
-      {
-        code: 'PETROL',
-        name: 'Petrol',
-        default: null,
-        rules: { ENGINEVERSIONS: 'GASOLINE' },
-      },
-      {
-        code: 'DIESEL',
-        name: 'Diesel',
-        default: null,
-        rules: { ENGINEVERSIONS: 'GASOLINE' },
-      },
-    ],
-    category: { name: 'Technical Data', code: 'TECHNICAL' },
-    isVisible: true,
-    isRequired: true,
-    rules: null,
-  }
+    "ENGINEVERSIONS": {
+        "code": "ENGINEVERSIONS",
+        "name": "Engine type",
+        "options": [
+            {
+                "code": "GASOLINE",
+                "name": "Gasoline",
+                "default": null,
+                "rules": null
+            },
+            {
+                "code": "ELECTRIC",
+                "name": "Electric",
+                "default": null,
+                "rules": null
+            },
+            {
+                "code": "HYDROGEN",
+                "name": "Hydrogen",
+                "default": null,
+                "rules": null
+            }
+        ],
+        "category": {
+            "name": "Technical Data",
+            "code": "TECHNICAL"
+        },
+        "isVisible": true,
+        "isRequired": true,
+        "rules": null
+    },
+    "FUELTYPE": {
+        "code": "FUELTYPE",
+        "name": "Fuel type",
+        "options": [
+            {
+                "code": "NONE",
+                "name": "none",
+                "default": null,
+                "rules": {
+                    "ENGINEVERSIONS": {
+                        "$in": [
+                            "ELECTRIC",
+                            "HYDROGEN"
+                        ]
+                    }
+                }
+            },
+            {
+                "code": "PETROL",
+                "name": "Petrol",
+                "default": null,
+                "rules": {
+                    "ENGINEVERSIONS": "GASOLINE"
+                }
+            },
+            {
+                "code": "DIESEL",
+                "name": "Diesel",
+                "default": null,
+                "rules": {
+                    "ENGINEVERSIONS": "GASOLINE"
+                }
+            }
+        ],
+        "category": {
+            "name": "Technical Data",
+            "code": "TECHNICAL"
+        },
+        "isVisible": true,
+        "isRequired": true,
+        "rules": null
+    }
 }
 ```
+
+Full example [data.js](https://github.com/ja-klaudiusz/React-Conditional-Selection/blob/main/src/data.js)
 
 #### Sample selection object
 
@@ -114,8 +161,6 @@ function App() {
 
 export default App;
 ```
-
-## [Sample data](https://github.com/ja-klaudiusz/React-Conditional-Selection/blob/main/src/data.js)
 
 Or try it on CodeSandbox [React Conditional Selection](https://codesandbox.io/s/react-conditional-selection-75e7s?file=/src/App.js)
 
