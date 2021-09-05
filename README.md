@@ -59,7 +59,13 @@ Validation is fast and performance. It relies on comparing rules defined on ever
 
 ## How to use
 
-Install package and apply code like this
+Install package
+
+```bash
+npm i react-conditional-selection
+```
+
+and apply code like this
 
 ```javascript
 import ConditionalSelection from 'react-conditional-selection';
